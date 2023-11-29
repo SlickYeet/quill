@@ -5,10 +5,13 @@ import { ArrowRight } from "lucide-react";
 import { authOptions } from "@/lib/auth/authOptions";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { buttonVariants } from "../ui/Button";
-import { SignIn, SignOut } from "../auth/Buttons";
+import { SignIn } from "../auth/Buttons";
+import UserAccountNav from "./UserAccountNav";
+import MobileNav from "./MobileNav";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
+  const user = session?.user;
 
   return (
     <nav className="sticky inset-x-0 top-0 z-30 h-14 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
@@ -18,45 +21,47 @@ const Navbar = async () => {
             quill.
           </Link>
 
-          {/* todo: add mobile navbar */}
+          <MobileNav isAuth={!!user} />
 
           <div className="hidden items-center space-x-4 sm:flex">
-            <>
-              <Link
-                href="/pricing"
-                className={buttonVariants({ variant: "ghost", size: "sm" })}
-              >
-                Pricing
-              </Link>
+            {!user ? (
+              <>
+                <Link
+                  href="/pricing"
+                  className={buttonVariants({ variant: "ghost", size: "sm" })}
+                >
+                  Pricing
+                </Link>
 
-              {!session ? (
-                <>
-                  <SignIn
-                    className={buttonVariants({ variant: "ghost", size: "sm" })}
-                  />
-                  <Link
-                    href="/auth/register"
-                    className={buttonVariants({ size: "sm" })}
-                  >
-                    Get Started
-                    <ArrowRight className="ml-1.5 h-5 w-5" />
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <SignOut
-                    className={buttonVariants({ variant: "ghost", size: "sm" })}
-                  />
-                  <Link
-                    href="/dashboard"
-                    className={buttonVariants({ size: "sm" })}
-                  >
-                    Dashboard
-                    <ArrowRight className="ml-1.5 h-5 w-5" />
-                  </Link>
-                </>
-              )}
-            </>
+                <SignIn
+                  className={buttonVariants({
+                    variant: "ghost",
+                    size: "sm",
+                  })}
+                />
+                <Link
+                  href="/auth/register"
+                  className={buttonVariants({ size: "sm" })}
+                >
+                  Get Started
+                  <ArrowRight className="ml-1.5 h-5 w-5" />
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/dashboard"
+                  className={buttonVariants({ variant: "ghost", size: "sm" })}
+                >
+                  Dashboard
+                </Link>
+                <UserAccountNav
+                  name={!user.name ? "Your Account" : `${user.name}`}
+                  email={user.email ?? ""}
+                  imageUrl={user.image ?? ""}
+                />
+              </>
+            )}
           </div>
         </div>
       </MaxWidthWrapper>

@@ -1,4 +1,4 @@
-A hobby web project using [Next JS 14](https://nextjs.org/ "Next JS 14").
+A test web app using [Next.js 14](https://nextjs.org/ "Next.js 14").
 
 ## 🔗 Links
 
@@ -7,7 +7,6 @@ A hobby web project using [Next JS 14](https://nextjs.org/ "Next JS 14").
 - [www.famlam.ca](https://www.famlam.ca "www.famlam.ca Homepage")
 - [play.famlam.ca](https://play.famlam.ca "play.famlam.ca Homepage")
 - [old.famlam.ca](https://old.famlam.ca "old.famlam.ca Homepage")
-- [quill.famlam.ca](https://quill.famlam.ca "quill.famlam.ca Homepage")
 
 #### Repositories:
 
@@ -15,9 +14,9 @@ A hobby web project using [Next JS 14](https://nextjs.org/ "Next JS 14").
 
 ## Tech Stack
 
-- [Next JS 14](https://nextjs.org/ "Next JS 14")
+- [Next.js 14](https://nextjs.org/ "Next.js 14")
 - [React](https://react.dev/ "React")
-- [Node.js](https://nodejs.org/en/ "Node JS")
+- [Node.js](https://nodejs.org/en/ "Node.js")
 - [TypeScript](https://www.typescriptlang.org/ "TypeScript")
 - [NextAuth.js](https://next-auth.js.org "NextAuth JS")
 - [Prisma](https://prisma.io "Prisma")
@@ -27,7 +26,7 @@ A hobby web project using [Next JS 14](https://nextjs.org/ "Next JS 14").
 
 ## Support
 
-For support, email lasse@famlam.ca!
+For support email me at lasse@famlam.ca
 
 #### Authors:
 

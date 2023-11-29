@@ -1,4 +1,4 @@
-A hobby web project using [React](https://react.dev/ "React").
+A hobby web project using [Next JS 14](https://nextjs.org/ "Next JS 14").
 
 ## 🔗 Links
 
@@ -7,6 +7,7 @@ A hobby web project using [React](https://react.dev/ "React").
 - [www.famlam.ca](https://www.famlam.ca "www.famlam.ca Homepage")
 - [play.famlam.ca](https://play.famlam.ca "play.famlam.ca Homepage")
 - [old.famlam.ca](https://old.famlam.ca "old.famlam.ca Homepage")
+- [quill.famlam.ca](https://quill.famlam.ca "quill.famlam.ca Homepage")
 
 #### Repositories:
 
@@ -14,6 +15,7 @@ A hobby web project using [React](https://react.dev/ "React").
 
 ## Tech Stack
 
+- [Next JS 14](https://nextjs.org/ "Next JS 14")
 - [React](https://react.dev/ "React")
 - [Node.js](https://nodejs.org/en/ "Node JS")
 - [TypeScript](https://www.typescriptlang.org/ "TypeScript")
@@ -27,6 +29,7 @@ A hobby web project using [React](https://react.dev/ "React").
 
 For support, email lasse@famlam.ca!
 
-#### Author:
+#### Authors:
 
 - [@SlicKYeet](https://www.github.com/SlickYeet)
+- [@famlam-ca](https://www.github.com/famlam-ca)

@@ -1,10 +1,10 @@
 import { getServerSession } from "next-auth";
 import { notFound, redirect } from "next/navigation";
 
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { db } from "@/db";
-import PDFRenderer from "@/components/PDFRenderer";
 import ChatWrapper from "@/components/chat/ChatWrapper";
+import { authOptions } from "@/lib/auth/authOptions";
+import PDFRenderer from "@/components/PDFRenderer";
+import { db } from "@/db";
 
 interface PageProps {
   params: {

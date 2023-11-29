@@ -1,6 +1,7 @@
-import { TRPCError, initTRPC } from "@trpc/server";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
+import { TRPCError, initTRPC } from "@trpc/server";
+import { authOptions } from "@/lib/auth/authOptions";
 
 const t = initTRPC.create();
 const middleware = t.middleware;

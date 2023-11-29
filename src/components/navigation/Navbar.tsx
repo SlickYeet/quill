@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { getServerSession } from "next-auth/next";
+import { ArrowRight } from "lucide-react";
 
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-
+import { authOptions } from "@/lib/auth/authOptions";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { buttonVariants } from "../ui/Button";
 import { SignIn, SignOut } from "../auth/Buttons";
-import { ArrowRight } from "lucide-react";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);

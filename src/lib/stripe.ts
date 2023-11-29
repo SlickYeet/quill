@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 import { getServerSession } from "next-auth";
 
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "./auth/authOptions";
 import { PLANS } from "@/config/stripe";
 import { db } from "@/db";
 

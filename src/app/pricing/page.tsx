@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getServerSession } from "next-auth";
 import { ArrowRight, Check, HelpCircle, Minus } from "lucide-react";
 
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth/authOptions";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import {
   Tooltip,
